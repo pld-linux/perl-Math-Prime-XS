@@ -9,13 +9,13 @@
 Summary:	Math::Prime::XS - Calculate/detect prime numbers with deterministic tests
 #Summary(pl.UTF-8):	
 Name:		perl-Math-Prime-XS
-Version:	0.19
+Version:	0.20
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b8a63654195d4cc51dc486706b6c955e
+# Source0-md5:	438175251c223384127bed4651537b0d
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/Math-Prime-XS/
 BuildRequires:	perl-devel >= 1:5.8.0
