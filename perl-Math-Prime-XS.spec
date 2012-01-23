@@ -9,27 +9,26 @@
 Summary:	Math::Prime::XS - Calculate/detect prime numbers with deterministic tests
 #Summary(pl.UTF-8):	
 Name:		perl-Math-Prime-XS
-Version:	0.20
+Version:	0.26
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	438175251c223384127bed4651537b0d
+# Source0-md5:	5bd7727093742cc85cd6c762422c98c8
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/Math-Prime-XS/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
+BuildRequires:	perl-boolean
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Math::Prime::XS calculates/detects prime numbers by either applying
-Modulo operator division, the Sieve of Eratosthenes, Trial division or a
-Summing calculation.
-
-
+Modulo operator division, the Sieve of Eratosthenes, Trial division or
+a Summing calculation.
 
 # %description -l pl.UTF-8
 # TODO
