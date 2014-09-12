@@ -58,6 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes INSTALL README
 %{perl_vendorarch}/Math/Prime/XS.pm
 %dir %{perl_vendorarch}/auto/Math/Prime/XS
-%{perl_vendorarch}/auto/Math/Prime/XS/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Math/Prime/XS/*.so
 %{_mandir}/man3/*
