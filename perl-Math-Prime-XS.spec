@@ -2,12 +2,11 @@
 # Conditional build:
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	Math
 %define	pnam	Prime-XS
+%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Prime::XS - Calculate/detect prime numbers with deterministic tests
-#Summary(pl.UTF-8):	
 Name:		perl-Math-Prime-XS
 Version:	0.26
 Release:	1
@@ -16,8 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5bd7727093742cc85cd6c762422c98c8
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Math-Prime-XS/
+URL:		http://search.cpan.org/dist/Math-Prime-XS/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
@@ -29,9 +27,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Math::Prime::XS calculates/detects prime numbers by either applying
 Modulo operator division, the Sieve of Eratosthenes, Trial division or
 a Summing calculation.
-
-# %description -l pl.UTF-8
-# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
