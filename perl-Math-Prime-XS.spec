@@ -9,7 +9,7 @@
 Summary:	Math::Prime::XS - Calculate/detect prime numbers with deterministic tests
 Name:		perl-Math-Prime-XS
 Version:	0.26_01
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
