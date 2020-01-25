@@ -5,7 +5,6 @@
 
 %define	pdir	Math
 %define	pnam	Prime-XS
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Prime::XS - Calculate/detect prime numbers with deterministic tests
 Name:		perl-Math-Prime-XS
 Version:	0.26_01
