@@ -7,14 +7,15 @@
 %define	pnam	Prime-XS
 Summary:	Math::Prime::XS - Calculate/detect prime numbers with deterministic tests
 Name:		perl-Math-Prime-XS
-Version:	0.26_01
-Release:	16
+Version:	0.27
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b93a438fd10640b47910be8f9c3403ba
+Source0:	https://www.cpan.org/authors/id/K/KR/KRYDE/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	70a40bcf0d6d1a88375c884aa3139207
 URL:		http://search.cpan.org/dist/Math-Prime-XS/
+BuildRequires:	perl-Module-Build
 BuildRequires:	perl-Params-Validate
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
